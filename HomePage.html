@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style2.css" />
-    <title>Welcome this is the home page</title>
+    <link rel="stylesheet" href="style/styleHome.css" />
+    <title>Home page</title>
   </head>
   <body>
     <header>
-      <div class="Welcome"><h1>Welcome to the home page</h1></div>
       <div class="HomeIcon">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="9em"
-          height="9em"
-          preserveAspectRatio="xMidYMid meet"
+        xmlns="http://www.w3.org/2000/svg"
+        width="9em"
+        height="9em"
+        preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 24 24"
         >
           <path fill="currentColor" fill-opacity="0" d="M6 8L12 3L18 8V20H6V8Z">
@@ -70,6 +69,49 @@
             </path>
           </g>
         </svg>
+      </div>
+      <div class="Welcome"><h1>Welcome to the home page</h1></div>
+      <div class="MeIcon">
+        <a href="http://127.0.0.1:5500/AboutMe.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="9em"
+            height="9em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-dasharray="28"
+              stroke-dashoffset="28"
+              stroke-linecap="round"
+              stroke-width="2"
+            >
+              <path
+                d="M4 21V20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21"
+              >
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  dur="0.4s"
+                  values="28;0"
+                />
+              </path>
+              <path
+                d="M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"
+              >
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  begin="0.5s"
+                  dur="0.4s"
+                  values="28;0"
+                />
+              </path>
+            </g>
+          </svg>
+        </a>
       </div>
       <div class="GitIcon">
         <a target="_blank" href="https://github.com/shahartsuk">
@@ -140,64 +182,46 @@
           </svg>
         </a>
       </div>
-      <div class="MeIcon">
-        <a href="http://127.0.0.1:5500/AboutMe.html">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="9em"
-            height="9em"
-            preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 24 24"
-          >
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-dasharray="28"
-              stroke-dashoffset="28"
-              stroke-linecap="round"
-              stroke-width="2"
-            >
-              <path
-                d="M4 21V20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21"
-              >
-                <animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  dur="0.4s"
-                  values="28;0"
-                />
-              </path>
-              <path
-                d="M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"
-              >
-                <animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  begin="0.5s"
-                  dur="0.4s"
-                  values="28;0"
-                />
-              </path>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <div class="BlackLine"></div>
     </header>
+    <div class="BlackLine"></div>
     <main>
-      <table>
-        <tr>
-          <th>Process Name</th>
-          <th>process ID</th>
-          <th>PageFaultCount</th>
-          <th>WorkingSetSize</th>
-          <th>QuotaPagedPoolUsage</th>
-          <th>QuotaPeakPagedPoolUsage</th>
-          <th>PageFileUsage</th>
-          <th>DLLCount</th>
-          <th>Process's DLL List</th>
-        </tr>
-      </table>
+      <div class="LeftInputs">
+        <input class="LeftInput" placeholder="DLL Count:" type="text" />
+        <input class="LeftInput" placeholder="Process Count:" type="text" />
+        <input class="LeftInput" placeholder="Memory Average:" type="text" />
+      </div>
+      <div class="TableContainer">
+      <div class="LeftTable">
+        <div class="Sample">Samples List</div>
+        <table>
+          <tr>
+            <th>Link</th>
+            <th>Process Count</th>
+            <th>DLL Count</th>
+            <th>Memory Average</th>
+          </tr>
+          <tr>
+            <td><a href="http://127.0.0.1:5500/SamplePage.html"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+        <div class="RightTable">
+          <div class="DLL">DLL'S List</div>
+          <table>
+            <tr>
+              <th class="DLLName">DLL Name</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href=""></a></td>
+            </tr>
+          </table>
+        </div>
+    </div>
     </main>
   </body>
 </html>

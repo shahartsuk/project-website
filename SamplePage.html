@@ -4,52 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/styleAboutme.css" />
-    <title>About me page</title>
+    <link rel="stylesheet" href="style/stylesample.css" />
+    <title>Home page/Sample</title>
   </head>
   <body>
     <header>
-      <div class="MeIcon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="9em"
-          height="9em"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 24 24"
-        >
-          <g
-            fill="none"
-            stroke="currentColor"
-            stroke-dasharray="28"
-            stroke-dashoffset="28"
-            stroke-linecap="round"
-            stroke-width="2"
-          >
-            <path
-              d="M4 21V20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21"
-            >
-              <animate
-                fill="freeze"
-                attributeName="stroke-dashoffset"
-                dur="0.4s"
-                values="28;0"
-              />
-            </path>
-            <path
-              d="M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"
-            >
-              <animate
-                fill="freeze"
-                attributeName="stroke-dashoffset"
-                begin="0.5s"
-                dur="0.4s"
-                values="28;0"
-              />
-            </path>
-          </g>
-        </svg>
-      </div>
-      <div class="Welcome"><h1>A little about me</h1></div>
       <div class="HomeIcon">
         <a href="http://127.0.0.1:5500/HomePage.html">
           <svg
@@ -117,6 +76,7 @@
           </svg>
         </a>
       </div>
+      <div class="Welcome"><h1>Welcome to the sample page</h1></div>
       <div class="GitIcon">
         <a target="_blank" href="https://github.com/shahartsuk">
           <svg
@@ -186,8 +146,76 @@
           </svg>
         </a>
       </div>
+      <div class="MeIcon">
+        <a href="http://127.0.0.1:5500/AboutMe.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="9em"
+            height="9em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-dasharray="28"
+              stroke-dashoffset="28"
+              stroke-linecap="round"
+              stroke-width="2"
+            >
+              <path
+                d="M4 21V20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21"
+              >
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  dur="0.4s"
+                  values="28;0"
+                />
+              </path>
+              <path
+                d="M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"
+              >
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  begin="0.5s"
+                  dur="0.4s"
+                  values="28;0"
+                />
+              </path>
+            </g>
+          </svg>
+        </a>
+      </div>
     </header>
     <div class="BlackLine"></div>
-    <iframe src="" frameborder="0"></iframe>
+    <main>
+      <div class="SampleDate"><h1>Sample list number:1 at date</h1></div>
+      <table class="ProcessList">
+        <tr>
+          <th>Process Name</th>
+          <th>process ID</th>
+          <th>PageFaultCount</th>
+          <th>WorkingSetSize</th>
+          <th>QuotaPagedPoolUsage</th>
+          <th>QuotaPeakPagedPoolUsage</th>
+          <th>PageFileUsage</th>
+          <th>DLLCount</th>
+          <th>Process's DLL List</th>
+        </tr>
+        <tr>
+          <td class="ProcessName"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </main>
   </body>
 </html>
